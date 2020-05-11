@@ -1,17 +1,27 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Weather from "./Weather.js";
 
-function App() {
+import DateCity from "./DateCity";
+import SearchForm from "./SearchForm";
+import CurrentWeather from "./CurrentWeather";
+import WeatherForecast from "./WeatherForecast";
+import Credit from "./Credit";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>WEATHER APP</h1>
-        <Weather />
-      </header>
+      <div className="container">
+        <h2>
+          <span>🌤</span> What is the weather like today? <span>🌧</span>
+        </h2>
+        <DateCity />
+        <SearchForm />
+        <hr />
+        <CurrentWeather />
+        <hr />
+        <WeatherForecast />
+      </div>
+      <Credit />
     </div>
   );
 }
-
-export default App;
