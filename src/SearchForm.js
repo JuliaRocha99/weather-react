@@ -18,7 +18,9 @@ export default function SearchForm() {
           id="eyes"
           onClick="search(document.getElementById('searchCity').value)"
         >
-          <span>🔍</span>
+          <span role="img" aria-label="search">
+            🔍
+          </span>
         </button>
       </div>
     </div>
