@@ -1,4 +1,5 @@
 import React from "react";
+import "./CurrentWeather.css";
 
 export default function CurrentWeather() {
   return (
@@ -8,7 +9,7 @@ export default function CurrentWeather() {
           src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
           id="icon"
           class="float-left"
-          alt="sun"
+          alt="Sunny"
         />
         <div className="float-left">
           <strong id="temperature"> 20 </strong>
@@ -19,6 +20,9 @@ export default function CurrentWeather() {
       <div className="col-6" id="weatherStats">
         <span className="weatherElements">
           <ul>
+            <li>
+              Precipitation: <span id="precipitation" /> 5 %
+            </li>
             <li>
               Humidity: <span id="humidity" /> 55 %
             </li>
