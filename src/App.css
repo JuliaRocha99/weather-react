@@ -2,46 +2,6 @@ body {
   font-family: "Arvo", bold;
 }
 
-.float-left {
-  position: relative;
-  bottom: 5px;
-  left: 50px;
-}
-
-h1 {
-  font-size: 30px;
-  color: #cea7db;
-  text-shadow: 1px 1px 1px black;
-  padding: 10px;
-  margin: 5px;
-  display: block;
-  text-align: center;
-}
-
-h3 {
-  font-size: 20px;
-  color: black;
-  margin: 95;
-  position: relative;
-  top: 40px;
-  /* position: center; */
-  line-height: 10px;
-}
-
-h4 {
-  width: 40%;
-  font-size: 21px;
-  color: black;
-  text-shadow: 1px 1px 1px #cea7db;
-  padding: 15px;
-  padding-top: 0px;
-  margin-bottom: 10px;
-  text-align: center;
-  position: relative;
-  top: -30px;
-  left: 168px;
-}
-
 .container {
   height: 400px;
   width: 600px;
@@ -58,13 +18,18 @@ h4 {
   background-size: auto;
 }
 
-.inlining {
-  display: inline;
+h1 {
+  font-size: 30px;
+  color: #cea7db;
+  text-shadow: 1px 1px 1px black;
+  padding: 10px;
+  margin: 5px;
+  display: block;
+  text-align: center;
 }
 
-.row {
-  margin-top: 20px;
-  position: center;
+.inlining {
+  display: inline;
 }
 
 .first {
@@ -72,20 +37,6 @@ h4 {
   color: black;
   text-shadow: 1px 1px 1px #cea7db;
   margin-left: 75px;
-}
-
-.col-6 .active {
-  color: black;
-  cursor: default;
-}
-
-.col-6 .active:hover {
-  text-decoration: none;
-}
-
-.imgResponsive {
-  width: 100%;
-  height: auto;
 }
 
 img {
@@ -138,32 +89,6 @@ button {
   border-color: #b3ccff;
 }
 
-#searchCity {
-  width: 200px;
-  position: absolute;
-  right: 190px;
-  top: 145px;
-  height: 50px;
-}
-
-#actualWeather {
-  width: 350px;
-  font-size: 14px;
-  margin: 0px;
-  text-transform: capitalize;
-}
-
-ul {
-  position: center;
-  list-style: none;
-}
-
-.weatherElements {
-  position: relative;
-  left: 350px;
-  bottom: 65px;
-}
-
 @media only screen and (max-width: 768px) {
   [class*="container"] {
     padding: 10px;
@@ -175,10 +100,4 @@ ul {
   [class*="weatherElements"] {
     right: 94px;
   }
-}
-
-.credit {
-  position: relative;
-  resize: horizontal;
-  top: -15px;
 }

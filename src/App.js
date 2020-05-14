@@ -13,11 +13,13 @@ export default function App() {
         <h1>
           <span>🌤</span> What is the weather like today? <span>🌧</span>
         </h1>
+        <hr />
         <Weather />
         <hr />
         <CurrentWeather />
         <hr />
         <WeatherForecast />
+        <hr />
       </div>
       <Credit />
     </div>

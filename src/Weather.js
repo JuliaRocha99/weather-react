@@ -18,7 +18,7 @@ export default function Weather() {
             id="searchCity"
           />
         </form>
-        <div className="input-group-append">
+        <span className="input-group-append">
           <button
             className="btn btn-outline-secondary border art"
             type="submit"
@@ -30,7 +30,7 @@ export default function Weather() {
               🔍
             </span>
           </button>
-        </div>
+        </span>
       </div>
     </div>
   );

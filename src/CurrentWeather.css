@@ -6,3 +6,32 @@
 .col-6 .active:hover {
   text-decoration: none;
 }
+
+.float-left {
+  position: relative;
+  bottom: 5px;
+  left: 50px;
+}
+
+.weatherStats {
+  position: relative;
+  left: 350px;
+  bottom: 65px;
+}
+
+#actualWeather {
+  width: 350px;
+  font-size: 14px;
+  margin: 0px;
+  text-transform: capitalize;
+}
+
+.row {
+  margin-top: 20px;
+  position: center;
+}
+
+.imgResponsive {
+  width: 100%;
+  height: auto;
+}
