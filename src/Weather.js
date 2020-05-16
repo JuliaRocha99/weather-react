@@ -5,7 +5,7 @@ export default function Weather() {
   return (
     <div className="Weather">
       <h2>Porto</h2>
-      <h2>FRI, 18:00 </h2>
+      <h2 ID="date">FRI, 18:00 </h2>
       <div>
         <form id="search-form">
           <input

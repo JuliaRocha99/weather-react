@@ -1,6 +1,6 @@
 h4 {
   width: 40%;
-  font-size: 21px;
+  font-size: 25px;
   color: black;
   text-shadow: 1px 1px 1px #cea7db;
   padding: 15px;
@@ -8,6 +8,7 @@ h4 {
   margin-bottom: 10px;
   text-align: center;
   position: relative;
-  top: -146px;
-  left: 168px;
+  font-weight: 500;
+  top: -65px;
+  left: 188px;
 }
