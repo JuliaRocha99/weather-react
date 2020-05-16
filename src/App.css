@@ -3,8 +3,8 @@ body {
 }
 
 .container {
-  height: 400px;
-  width: 600px;
+  height: 450px;
+  width: 650px;
   margin: 30px auto;
   margin-bottom: 5px;
   padding: 15px auto;
@@ -22,8 +22,8 @@ h1 {
   font-size: 30px;
   color: #cea7db;
   text-shadow: 1px 1px 1px black;
-  padding: 10px;
-  margin: 5px;
+  padding: 15px;
+  margin-top: 25px;
   display: block;
   text-align: center;
 }
@@ -46,7 +46,7 @@ img {
 #icon {
   position: relative;
   left: 20px;
-  top: -132px;
+  top: 42px;
   width: 90px;
 }
 
@@ -76,7 +76,7 @@ img {
 }
 
 #eyes {
-  padding-bottom: 45px;
+  padding-bottom: 70px;
   height: 20px;
   position: absolute;
   left: 891px;

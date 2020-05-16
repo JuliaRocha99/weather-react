@@ -1,16 +1,18 @@
 h2 {
-  font-size: 25px;
+  width: 50%;
+  font-size: 22px;
   color: black;
-  text-shadow: 1px 1px 1px black;
-  padding: 17px;
-  margin: 5px;
-  display: block;
+  text-shadow: 1px 1px 1px #cea7db;
+  padding: 0px;
+  margin-left: 75px;
+  margin-bottom: 0px;
+  margin-top: 50px;
 }
 
 #searchCity {
-  width: 200px;
+  width: 250px;
   position: absolute;
-  right: 473px;
+  right: 450px;
   top: 145px;
   height: 50px;
 }
@@ -30,4 +32,9 @@ ul {
   font-size: large;
   position: relative;
   left: 90px;
+}
+
+.btn {
+  width: 50px;
+  position: absolute;
 }
