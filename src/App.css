@@ -45,8 +45,9 @@ img {
 
 #icon {
   position: relative;
-  left: 75px;
-  top: 50px;
+  left: 20px;
+  top: -132px;
+  width: 90px;
 }
 
 @media only screen and (max-width: 250px) {
@@ -61,22 +62,24 @@ img {
   color: rgb(33, 33, 33);
   font-size: 50px;
   position: relative;
-  left: 75px;
+  left: -17px;
+  bottom: 40px;
   line-height: 1;
 }
 
 .units {
   position: relative;
   font-size: 15px;
-  left: 70px;
-  top: -25px;
+  left: -20px;
+  /* top: -5px; */
+  bottom: 60px;
 }
 
 #eyes {
-  padding-bottom: 5px;
+  padding-bottom: 45px;
   height: 20px;
   position: absolute;
-  left: 625px;
+  left: 891px;
   top: 145px;
   line-height: -300px;
   border-style: solid;

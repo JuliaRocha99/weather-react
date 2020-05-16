@@ -1,8 +1,8 @@
 h2 {
-  font-size: 30px;
+  font-size: 25px;
   color: black;
   text-shadow: 1px 1px 1px black;
-  padding: 10px;
+  padding: 17px;
   margin: 5px;
   display: block;
 }
@@ -10,12 +10,24 @@ h2 {
 #searchCity {
   width: 200px;
   position: absolute;
-  right: 190px;
+  right: 473px;
   top: 145px;
   height: 50px;
 }
 
 ul {
-  position: center;
+  position: relative;
+  top: 10px;
   list-style: none;
+}
+
+#date {
+  position: relative;
+  bottom: 40px;
+}
+
+#sunny {
+  font-size: large;
+  position: relative;
+  left: 90px;
 }
