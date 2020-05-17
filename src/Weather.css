@@ -42,10 +42,9 @@ ul {
   bottom: 40px;
 }
 
-#sunny {
+#description {
   font-size: large;
   position: relative;
-  left: 90px;
 }
 
 .btn {
