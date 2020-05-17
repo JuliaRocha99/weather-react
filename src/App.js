@@ -13,7 +13,7 @@ export default function App() {
         <h1>
           <span>🌤</span> What is the weather like today? <span>🌧</span>
         </h1>
-        <Weather />
+        <Weather defaultCity="Porto" />
         <CurrentWeather />
         <WeatherForecast />
       </div>
