@@ -37,14 +37,12 @@ ul {
   font-size: medium;
 }
 
-#date {
-  position: relative;
-  bottom: 40px;
-}
-
-#description {
-  font-size: large;
-  position: relative;
+h3 {
+  width: 50%;
+  font-size: 20px;
+  color: black;
+  text-shadow: 2px 2px 2px #cea7db;
+  margin-left: 75px;
 }
 
 .btn {

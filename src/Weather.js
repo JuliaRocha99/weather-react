@@ -19,7 +19,9 @@ export default function Weather(props) {
       <div className="Weather">
         <h2>{weatherData.city}</h2>
         <FormattedDate date={weatherData.date} />
-        <span className="text-capitalize">{weatherData.description}</span>
+        <span className="text-capitalize">
+          <h3>{weatherData.description}</h3>
+        </span>
         <div>
           <form id="search-form">
             <input
