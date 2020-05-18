@@ -11,7 +11,7 @@ export default function CurrentWeather(props) {
       temperature: response.data.main.temp,
       precipitation: response.data.main.precipitation,
       description: response.data.weather[0].description,
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
     });
