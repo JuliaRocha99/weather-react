@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./CurrentWeather.css";
+import WeatherIcon from "./WeatherIcon";
 
 export default function CurrentWeather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
+  const [city, setCity] = useState(props.defaultCity);
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
@@ -11,23 +13,24 @@ export default function CurrentWeather(props) {
       temperature: response.data.main.temp,
       precipitation: response.data.main.precipitation,
       description: response.data.weather[0].description,
-      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
     });
+  }
+
+  function display() {
+    const apiKey = "bf0050d8d22310df394fff19194582c3";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
   }
 
   if (weatherData.ready) {
     return (
       <div id="weather" className="row">
         <div className="col-6" id="actualWeather">
-          <img
-            src={weatherData.iconUrl}
-            id="icon"
-            class="float-left"
-            alt={weatherData.description}
-          />
           <div className="float-left">
+            <WeatherIcon code={props.data.icon} />
             <strong id="temperature">
               {Math.round(weatherData.temperature)}
             </strong>
@@ -54,10 +57,7 @@ export default function CurrentWeather(props) {
       </div>
     );
   } else {
-    const apiKey = "bf0050d8d22310df394fff19194582c3";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
-
+    display();
     return "Loading...";
   }
 }

@@ -34,11 +34,6 @@
   position: center;
 }
 
-.imgResponsive {
-  width: 100%;
-  height: auto;
-}
-
 .weatherElements {
   position: relative;
   bottom: 50px;
