@@ -7,6 +7,7 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   function handleResponse(response) {
+    console.log(response);
     setWeatherData({
       ready: true,
       city: response.data.name,
@@ -39,8 +40,8 @@ export default function Weather(props) {
           <h3>{weatherData.description}</h3>
         </span>
 
-        <div>
-          <form id="search-form" onSubmit={handleSubmit}>
+        <div className="searchBar">
+          <form onSubmit={handleSubmit}>
             <input
               type="search"
               className="form-control"
@@ -56,7 +57,9 @@ export default function Weather(props) {
               type="submit"
               value="search"
               id="eyes"
-              onClick="search(document.getElementById('searchCity').value)"
+              onClick={() =>
+                search(document.getElementById("searchCity").value)
+              }
             >
               <span role="img" aria-label="search">
                 🔍
@@ -68,6 +71,6 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Loading...";
+    return null;
   }
 }

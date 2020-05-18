@@ -2,6 +2,16 @@ body {
   font-family: "Arvo", bold;
 }
 
+.App {
+  height: 500px;
+  width: 700px;
+  position: center;
+  margin: 30px auto;
+  margin-bottom: 5px;
+  padding: 15px auto;
+  padding-bottom: 5px;
+}
+
 .container {
   height: 500px;
   width: 700px;
@@ -86,4 +96,9 @@ img {
   [class*="weatherElements"] {
     right: 94px;
   }
+}
+
+.credit {
+  position: relative;
+  resize: horizontal;
 }

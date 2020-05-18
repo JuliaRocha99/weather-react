@@ -4,7 +4,6 @@ import "./App.css";
 import Weather from "./Weather";
 import CurrentWeather from "./CurrentWeather";
 import WeatherForecast from "./WeatherForecast";
-import Credit from "./Credit";
 
 export default function App() {
   return (
@@ -17,7 +16,16 @@ export default function App() {
         <CurrentWeather />
         <WeatherForecast />
       </div>
-      <Credit />
+      <p className="credit">
+        <a
+          href="https://github.com/JuliaRocha99/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open-source code
+        </a>{" "}
+        by Júlia Rocha
+      </p>
     </div>
   );
 }

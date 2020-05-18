@@ -18,6 +18,10 @@ h2 {
   height: 50px;
 }
 
+#searchBar {
+  position: absolute;
+}
+
 #eyes {
   padding-bottom: 41px;
   height: 20px;

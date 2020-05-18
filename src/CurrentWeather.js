@@ -4,10 +4,18 @@ import "./CurrentWeather.css";
 import WeatherIcon from "./WeatherIcon";
 
 export default function CurrentWeather(props) {
-  const [weatherData, setWeatherData] = useState({ ready: false });
-  const [city, setCity] = useState(props.defaultCity);
+  const [weatherData, setWeatherData] = useState({
+    ready: false,
+    temperature: "",
+    precipitation: "",
+    description: "",
+    icon: "",
+    humidity: "",
+    wind: "",
+  });
+
+  const [city] = useState(props.defaultCity);
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
@@ -23,14 +31,22 @@ export default function CurrentWeather(props) {
     const apiKey = "bf0050d8d22310df394fff19194582c3";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
+    console.log(weatherData);
+    //weatherData.ready = true;
   }
 
+  //console.log(weatherData);
+  //console.log(weatherData);
+  //console.log(weatherData.temperature);
+  display();
   if (weatherData.ready) {
+    display();
+    console.log(weatherData.humidity);
     return (
       <div id="weather" className="row">
         <div className="col-6" id="actualWeather">
           <div className="float-left">
-            <WeatherIcon code={props.data.icon} />
+            <WeatherIcon code={weatherData.icon} />
             <strong id="temperature">
               {Math.round(weatherData.temperature)}
             </strong>
