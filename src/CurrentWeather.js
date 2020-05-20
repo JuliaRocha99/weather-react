@@ -28,9 +28,8 @@ export default function CurrentWeather(props) {
   }
 
   function display() {
-    const apiKey = "ad1871ece578f60f45f6df666b9f8f6b";
+    const apiKey = "a9ac55dda124f58c0f593cfe39aa316c";
     const cityDefault = city;
-    console.log(city);
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityDefault}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
     weatherData.ready = true;
@@ -39,7 +38,6 @@ export default function CurrentWeather(props) {
   display();
   if (weatherData.ready) {
     display();
-    console.log(weatherData.humidity);
     return (
       <div id="weather" className="row">
         <div className="col-6" id="actualWeather">
@@ -63,7 +61,7 @@ export default function CurrentWeather(props) {
                 Humidity: <span id="humidity" /> {weatherData.humidity} %
               </li>
               <li>
-                Wind: <span id="wind" /> {weatherData.wind} km/h
+                Wind: <span id="wind" /> {Math.round(weatherData.wind)} km/h
               </li>
             </ul>
           </span>
