@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./CurrentWeather.css";
 import WeatherIcon from "./WeatherIcon";
+import "./CurrentWeather.css";
 
 export default function CurrentWeather(props) {
   const [weatherData, setWeatherData] = useState({
@@ -14,7 +14,7 @@ export default function CurrentWeather(props) {
     wind: "",
   });
 
-  const [city] = useState(props.defaultCity);
+  const [city] = useState(props.cityDefault);
   function handleResponse(response) {
     setWeatherData({
       ready: true,

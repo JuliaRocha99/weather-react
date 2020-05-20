@@ -12,7 +12,7 @@ body {
   padding-bottom: 5px;
 }
 
-.container {
+.Container {
   height: 500px;
   width: 700px;
   margin: 30px auto;
@@ -81,7 +81,7 @@ img {
   position: relative;
   font-size: 15px;
   left: -20px;
-  /* top: -5px; */
+  top: -5px;
   bottom: -35px;
 }
 

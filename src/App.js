@@ -7,12 +7,12 @@ import WeatherForecast from "./WeatherForecast";
 export default function App() {
   return (
     <div className="App">
-      <div className="container">
+      <div className="Container">
         <h1>
           <span>🌤</span> What is the weather like today? <span>🌧</span>
         </h1>
         <Weather />
-        <CurrentWeather defaultCity="Porto" />
+        <CurrentWeather cityDefault="Porto" />
         <WeatherForecast />
       </div>
       <p className="credit">
