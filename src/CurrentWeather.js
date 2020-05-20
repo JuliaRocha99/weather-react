@@ -28,7 +28,7 @@ export default function CurrentWeather(props) {
   }
 
   function display() {
-    const apiKey = "a9ac55dda124f58c0f593cfe39aa316c";
+    const apiKey = "ebf4d4fa295d6317589144d1d9cc58bc";
     const cityDefault = city;
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityDefault}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
@@ -46,7 +46,7 @@ export default function CurrentWeather(props) {
             <strong id="temperature">
               {Math.round(weatherData.temperature)}
             </strong>
-            <span className="units">ºC | ºF</span>
+            <span className="units"> ºC | ºF</span>
             <div id="description" />
           </div>
         </div>
