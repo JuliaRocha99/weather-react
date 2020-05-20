@@ -28,16 +28,14 @@ export default function CurrentWeather(props) {
   }
 
   function display() {
-    const apiKey = "bf0050d8d22310df394fff19194582c3";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    const apiKey = "ad1871ece578f60f45f6df666b9f8f6b";
+    const cityDefault = city;
+    console.log(city);
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityDefault}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
-    console.log(weatherData);
-    //weatherData.ready = true;
+    weatherData.ready = true;
   }
 
-  //console.log(weatherData);
-  //console.log(weatherData);
-  //console.log(weatherData.temperature);
   display();
   if (weatherData.ready) {
     display();
