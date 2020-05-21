@@ -36,9 +36,7 @@ export default function CurrentWeather(props) {
     weatherData.ready = true;
   }
 
-  display();
   if (weatherData.ready) {
-    display();
     return (
       <div id="weather" className="row">
         <div className="col-6" id="actualWeather">
@@ -51,10 +49,10 @@ export default function CurrentWeather(props) {
         <div className="col-6" id="weatherStats">
           <span className="weatherElements">
             <ul>
-              {/* <li> */}
-              {/* Precipitation: <span id="precipitation" />{" "} */}
-              {/* {weatherData.precipitation} % */}
-              {/* </li>// */}
+              <li>
+                Precipitation: <span id="precipitation" />{" "}
+                {weatherData.precipitation} %
+              </li>
               <li>
                 Humidity: <span id="humidity" /> {weatherData.humidity} %
               </li>
