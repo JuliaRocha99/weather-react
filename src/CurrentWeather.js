@@ -44,17 +44,17 @@ export default function CurrentWeather(props) {
         <div className="col-6" id="actualWeather">
           <WeatherIcon code={weatherData.icon} />
           <div className="float-left">
-            <WeatherTemperature celsius={props.data.temperature} />
+            <WeatherTemperature celsius={props.data} />
             <div id="description" />
           </div>
         </div>
         <div className="col-6" id="weatherStats">
           <span className="weatherElements">
             <ul>
-              <li>
-                Precipitation: <span id="precipitation" />{" "}
-                {weatherData.precipitation} %
-              </li>
+              {/* <li> */}
+              {/* Precipitation: <span id="precipitation" />{" "} */}
+              {/* {weatherData.precipitation} % */}
+              {/* </li>// */}
               <li>
                 Humidity: <span id="humidity" /> {weatherData.humidity} %
               </li>
