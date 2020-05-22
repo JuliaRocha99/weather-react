@@ -19,12 +19,12 @@ export default function CurrentWeather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      temperature: response.data.main.temp,
-      precipitation: response.data.main.precipitation,
-      description: response.data.weather[0].description,
-      icon: response.data.weather[0].icon,
-      humidity: response.data.main.humidity,
-      wind: response.data.wind.speed,
+      temperature: response.weatherData.main.temp,
+      precipitation: response.weatherData.main.precipitation,
+      description: response.weatherData.weather[0].description,
+      icon: response.weatherData.weather[0].icon,
+      humidity: response.weatherData.main.humidity,
+      wind: response.weatherData.wind.speed,
     });
   }
 
@@ -42,7 +42,7 @@ export default function CurrentWeather(props) {
         <div className="col-6" id="actualWeather">
           <WeatherIcon code={weatherData.icon} />
           <div className="float-left">
-            <WeatherTemperature celsius={props.data} />
+            <WeatherTemperature celsius={props.weatherData.temp} />
             <div id="description" />
           </div>
         </div>

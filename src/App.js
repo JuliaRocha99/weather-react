@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Weather from "./Weather";
-import CurrentWeather from "./CurrentWeather";
 import WeatherForecast from "./WeatherForecast";
 
 export default function App() {
@@ -12,7 +11,6 @@ export default function App() {
           <span>🌤</span> What is the weather like today? <span>🌧</span>
         </h1>
         <Weather />
-        <CurrentWeather cityDefault="Porto" />
         <WeatherForecast />
       </div>
       <p className="credit">
