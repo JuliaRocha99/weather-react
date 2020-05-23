@@ -13,6 +13,11 @@ export default function Weather(props) {
       city: response.data.name,
       description: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
+      temperature: response.data.main.temp,
+      // precipitation: response.data.main.precipitation,
+      icon: response.data.weather[0].icon,
+      humidity: response.data.main.humidity,
+      wind: response.data.wind.speed,
     });
   }
 
@@ -36,9 +41,7 @@ export default function Weather(props) {
       <div className="Weather">
         <h2>{weatherData.city}</h2>
         <FormattedDate date={weatherData.date} />
-        <span className="text-capitalize">
-          <h3>{weatherData.description}</h3>
-        </span>
+        <span className="text-capitalize"></span>
 
         <div className="searchBar">
           <form onSubmit={handleSubmit}>
@@ -66,7 +69,7 @@ export default function Weather(props) {
               </span>
             </button>
           </span>
-          <CurrentWeather weatherData={weatherData} />
+          <CurrentWeather cityDefault={props.city} weatherData={weatherData} />
         </div>
       </div>
     );

@@ -19,7 +19,7 @@ h2 {
 }
 
 #searchBar {
-  position: absolute;
+  position: relative;
 }
 
 #eyes {
@@ -52,4 +52,27 @@ h3 {
 .btn {
   width: 50px;
   position: absolute;
+}
+
+@media only screen and (max-width: 1000px) {
+  /* #eyes {
+    padding-bottom: 41px;
+    height: 20px;
+    position: absolute;
+    left: 791px;
+    top: 165px;
+    line-height: -300px;
+    border-style: solid;
+    border-color: black;
+  } */
+  #eyes {
+    padding-bottom: 41px;
+    height: 20px;
+    position: absolute;
+    left: 572px;
+    top: 165px;
+    line-height: -300px;
+    border-style: solid;
+    border-color: black;
+  }
 }

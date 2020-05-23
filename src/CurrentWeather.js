@@ -7,24 +7,12 @@ import "./CurrentWeather.css";
 export default function CurrentWeather(props) {
   const [weatherData, setWeatherData] = useState({
     ready: false,
-    temperature: "",
-    precipitation: "",
-    description: "",
-    icon: "",
-    humidity: "",
-    wind: "",
   });
 
   const [city] = useState(props.cityDefault);
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      temperature: response.weatherData.main.temp,
-      precipitation: response.weatherData.main.precipitation,
-      description: response.weatherData.weather[0].description,
-      icon: response.weatherData.weather[0].icon,
-      humidity: response.weatherData.main.humidity,
-      wind: response.weatherData.wind.speed,
     });
   }
 
@@ -35,29 +23,32 @@ export default function CurrentWeather(props) {
     axios.get(apiUrl).then(handleResponse);
     weatherData.ready = true;
   }
-
-  if (weatherData.ready) {
+  console.log(props.weatherData);
+  if (props.weatherData.ready) {
     return (
       <div id="weather" className="row">
         <div className="col-6" id="actualWeather">
-          <WeatherIcon code={weatherData.icon} />
+          <WeatherIcon code={props.weatherData.icon} />
           <div className="float-left">
-            <WeatherTemperature celsius={props.weatherData.temp} />
+            <WeatherTemperature celsius={props.weatherData.temperature} />
+
             <div id="description" />
+            <h3>{props.weatherData.description}</h3>
           </div>
         </div>
         <div className="col-6" id="weatherStats">
           <span className="weatherElements">
             <ul>
+              {/* <li> */}
+              {/* Precipitation: <span id="precipitation" />{" "} */}
+              {/* {props.weatherData.precipitation} % */}
+              {/* </li> */}
               <li>
-                Precipitation: <span id="precipitation" />{" "}
-                {weatherData.precipitation} %
+                Humidity: <span id="humidity" /> {props.weatherData.humidity} %
               </li>
               <li>
-                Humidity: <span id="humidity" /> {weatherData.humidity} %
-              </li>
-              <li>
-                Wind: <span id="wind" /> {Math.round(weatherData.wind)} km/h
+                Wind: <span id="wind" /> {Math.round(props.weatherData.wind)}{" "}
+                km/h
               </li>
             </ul>
           </span>
