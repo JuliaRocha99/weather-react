@@ -28,13 +28,14 @@ export default function CurrentWeather(props) {
     return (
       <div id="weather" className="row">
         <div className="col-6" id="actualWeather">
-          <WeatherIcon code={props.weatherData.icon} />
           <div className="float-left">
             <WeatherTemperature celsius={props.weatherData.temperature} />
-
-            <div id="description" />
-            <h3>{props.weatherData.description}</h3>
           </div>
+          <div className="icon">
+            <WeatherIcon code={props.weatherData.icon} />
+          </div>
+          <div id="description" />
+          <p>{props.weatherData.description}</p>
         </div>
         <div className="col-6" id="weatherStats">
           <span className="weatherElements">

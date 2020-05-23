@@ -29,11 +29,10 @@ body {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
   color: #cea7db;
   text-shadow: 1px 1px 1px black;
-  padding: 15px;
-  margin-top: 25px;
+  padding: 10px;
   display: block;
   text-align: center;
 }
