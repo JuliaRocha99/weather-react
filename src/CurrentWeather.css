@@ -14,10 +14,8 @@
   left: 50px;
 }
 
-.weatherStats {
-  position: relative;
-  left: 350px;
-  bottom: 5px;
+#weatherStats {
+  display: inline;
   font-weight: bold;
 }
 
@@ -36,5 +34,24 @@
 
 .weatherElements {
   position: relative;
-  bottom: 50px;
+  bottom: 220px;
+  left: 322px;
+  font-size: 41px;
+  display: inline;
+}
+
+.weatherElements li {
+  display: block;
+}
+
+.icon {
+  position: relative;
+  bottom: 40px;
+  right: 30px;
+}
+
+#description {
+  position: relative;
+  left: 170px;
+  bottom: 80px;
 }

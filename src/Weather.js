@@ -69,8 +69,8 @@ export default function Weather(props) {
               </span>
             </button>
           </span>
-          <CurrentWeather cityDefault={props.city} weatherData={weatherData} />
         </div>
+        <CurrentWeather cityDefault={props.city} weatherData={weatherData} />
       </div>
     );
   } else {

@@ -34,25 +34,27 @@ export default function CurrentWeather(props) {
           <div className="icon">
             <WeatherIcon code={props.weatherData.icon} />
           </div>
-          <div id="description" />
-          <p>{props.weatherData.description}</p>
-        </div>
-        <div className="col-6" id="weatherStats">
-          <span className="weatherElements">
-            <ul>
-              {/* <li> */}
-              {/* Precipitation: <span id="precipitation" />{" "} */}
-              {/* {props.weatherData.precipitation} % */}
-              {/* </li> */}
-              <li>
-                Humidity: <span id="humidity" /> {props.weatherData.humidity} %
-              </li>
-              <li>
-                Wind: <span id="wind" /> {Math.round(props.weatherData.wind)}{" "}
-                km/h
-              </li>
-            </ul>
-          </span>
+          <div id="description">
+            <p>{props.weatherData.description}</p>
+          </div>
+          <div className="col-6" id="weatherStats">
+            <span className="weatherElements">
+              <ul>
+                {/* <li> */}
+                {/* Precipitation: <span id="precipitation" />{" "} */}
+                {/* {props.weatherData.precipitation} % */}
+                {/* </li> */}
+                <li>
+                  Humidity: <span id="humidity" /> {props.weatherData.humidity}{" "}
+                  %
+                </li>
+                <li>
+                  Wind: <span id="wind" /> {Math.round(props.weatherData.wind)}{" "}
+                  km/h
+                </li>
+              </ul>
+            </span>
+          </div>
         </div>
       </div>
     );

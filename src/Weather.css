@@ -14,7 +14,7 @@ h2 {
   width: 250px;
   position: absolute;
   right: 450px;
-  top: 165px;
+  top: 129px;
   height: 50px;
 }
 
@@ -25,9 +25,9 @@ h2 {
 #eyes {
   padding-bottom: 41px;
   height: 20px;
-  position: absolute;
-  left: 991px;
-  top: 165px;
+  position: relative;
+  left: 619px;
+  bottom: 60px;
   line-height: -300px;
   border-style: solid;
   border-color: black;
@@ -53,23 +53,21 @@ h3 {
   position: absolute;
 }
 
-@media only screen and (max-width: 1000px) {
-  /* #eyes {
-    padding-bottom: 41px;
-    height: 20px;
+@media only screen and (max-width: 1300px) {
+  #searchCity {
+    width: 250px;
     position: absolute;
-    left: 791px;
-    top: 165px;
-    line-height: -300px;
-    border-style: solid;
-    border-color: black;
-  } */
+    right: 325px;
+    top: 129px;
+    height: 50px;
+  }
+
   #eyes {
-    padding-bottom: 41px;
-    height: 20px;
+    padding-bottom: 45px;
+    padding-left: 20px;
+    height: 48px;
     position: absolute;
-    left: 572px;
-    top: 165px;
+    top: 129px;
     line-height: -300px;
     border-style: solid;
     border-color: black;
