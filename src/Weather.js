@@ -41,9 +41,7 @@ export default function Weather(props) {
       <div className="Weather">
         <h2>{weatherData.city}</h2>
         <FormattedDate date={weatherData.date} />
-        <span className="text-capitalize"></span>
-
-        <div className="searchBar">
+        <span className="input-group-append">
           <form onSubmit={handleSubmit}>
             <input
               type="search"
@@ -54,22 +52,18 @@ export default function Weather(props) {
               onChange={handleCityChange}
             />
           </form>
-          <span className="input-group-append">
-            <button
-              className="btn btn-outline-secondary border art"
-              type="submit"
-              value="search"
-              id="eyes"
-              onClick={() =>
-                search(document.getElementById("searchCity").value)
-              }
-            >
-              <span role="img" aria-label="search">
-                🔍
-              </span>
-            </button>
-          </span>
-        </div>
+          <button
+            className="btn btn-outline-secondary border art"
+            type="submit"
+            value="search"
+            id="eyes"
+            onClick={() => search(document.getElementById("searchCity").value)}
+          >
+            <span role="img" aria-label="search">
+              🔍
+            </span>
+          </button>
+        </span>
         <CurrentWeather cityDefault={props.city} weatherData={weatherData} />
       </div>
     );

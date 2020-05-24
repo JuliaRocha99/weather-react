@@ -3,8 +3,7 @@ body {
 }
 
 .App {
-  height: 500px;
-  width: 700px;
+  width: 670px;
   position: center;
   margin: 30px auto;
   margin-bottom: 5px;
@@ -14,7 +13,7 @@ body {
 
 .Container {
   height: 500px;
-  width: 700px;
+  width: 670px;
   margin: 30px auto;
   margin-bottom: 5px;
   padding: 15px auto;
@@ -59,7 +58,7 @@ img {
   width: 90px;
 }
 
-@media only screen and (max-width: 250px) {
+@media only screen and (max-width: 350px) {
   .searchbox {
     width: 20px;
     height: 3px;
@@ -84,7 +83,7 @@ img {
   bottom: -35px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
   [class*="container"] {
     padding: 10px;
   }
