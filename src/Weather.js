@@ -15,7 +15,6 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
-      // precipitation: response.data.main.precipitation,
       icon: response.data.weather[0].icon,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
@@ -40,36 +39,50 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <h2>{weatherData.city}</h2>
-        <FormattedDate date={weatherData.date} />
-        <span className="input-group-append">
-          <form onSubmit={handleSubmit}>
-            <input
-              type="search"
-              className="form-control"
-              placeholder="Enter a city..."
-              id="searchCity"
-              autoFocus="on"
-              onChange={handleCityChange}
-            />
-          </form>
-          <button
-            className="btn btn-outline-secondary border art"
-            type="submit"
-            value="search"
-            id="eyes"
-            onClick={() => search(document.getElementById("searchCity").value)}
-          >
-            <span role="img" aria-label="search">
-              🔍
-            </span>
-          </button>
-        </span>
-        <CurrentWeather cityDefault={props.city} weatherData={weatherData} />
-        <div className="forecastTitle">
-          <h4>FORECAST</h4>
+        <div className="CurrentSearch" row>
+          <span className="CityPlace">
+            <h2>
+              {weatherData.city}
+              <p>
+                <FormattedDate date={weatherData.date} />
+              </p>
+            </h2>
+          </span>
+          <span className="input-group-append">
+            <form onSubmit={handleSubmit}>
+              <input
+                type="search"
+                className="form-control"
+                placeholder="Enter a city..."
+                id="searchCity"
+                autoFocus="on"
+                onChange={handleCityChange}
+              />
+            </form>
+            <button
+              className="btn btn-outline-secondary border art"
+              type="submit"
+              value="search"
+              id="eyes"
+              onClick={() =>
+                search(document.getElementById("searchCity").value)
+              }
+            >
+              <span role="img" aria-label="search">
+                🔍
+              </span>
+            </button>
+          </span>
         </div>
-        <WeatherForecast city={weatherData.city} />
+
+        <CurrentWeather cityDefault={props.city} weatherData={weatherData} />
+        <div>
+          {" "}
+          <div className="forecastTitle">
+            <h4>FORECAST</h4>
+          </div>
+          <WeatherForecast city={weatherData.city} />
+        </div>
       </div>
     );
   } else {
