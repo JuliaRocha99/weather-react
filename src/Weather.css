@@ -1,6 +1,8 @@
 .input-group-append {
   margin-left: 370px;
   padding-bottom: 8px;
+  position: relative;
+  bottom: 70px;
 }
 
 h2 {
@@ -45,12 +47,12 @@ h4 {
   height: 25px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 350px) {
   #searchCity {
     width: 250px;
     position: relative;
     right: 40px;
-    top: 129px;
+    top: 29px;
     height: 60px;
   }
 

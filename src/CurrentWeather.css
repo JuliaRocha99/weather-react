@@ -21,7 +21,7 @@
 
 #actualWeather {
   width: 350px;
-  font-size: 15px;
+  font-size: 18px;
   margin: 0px;
   font-weight: bold;
 }
@@ -33,22 +33,23 @@
 
 .weatherElements li {
   position: relative;
-  bottom: 220px;
-  left: 322px;
+  bottom: 275px;
+  left: 338px;
   font-size: 18px;
   display: block;
 }
 
 .icon {
   position: relative;
-  bottom: 40px;
-  right: 50px;
+  bottom: 90px;
+  right: 10px;
+  left: 60px;
 }
 
 #description {
   position: relative;
   left: 175px;
-  bottom: 80px;
+  bottom: 132px;
   color: black;
   text-shadow: 1px 1px 1px #cea7db;
 }
