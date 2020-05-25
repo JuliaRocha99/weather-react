@@ -15,9 +15,6 @@ export default function WeatherForecast(props) {
   if (loaded && props.city === forecast.city.name) {
     return (
       <div className="WeatherForecast row">
-        <div className="forecastTitle">
-          <h4>FORECAST</h4>
-        </div>
         <WeatherForecastPreview data={forecast.list[0]} />
         <WeatherForecastPreview data={forecast.list[1]} />
         <WeatherForecastPreview data={forecast.list[2]} />

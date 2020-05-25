@@ -1,21 +1,7 @@
-h4 {
-  width: 40%;
-  font-size: 25px;
-  color: black;
-  text-shadow: 1px 1px 1px #cea7db;
-  padding: 15px;
-  padding-top: 0px;
-  margin-bottom: 10px;
-  text-align: center;
-  position: relative;
-  font-weight: 500;
-  bottom: 294px;
-  left: 188px;
-}
-
 .WeatherForecast {
   text-align: center;
   margin: 10px 0;
+  font-weight: bold;
 }
 
 .WeatherForecast canvas {

@@ -25,6 +25,20 @@ h3 {
   margin-left: 75px;
 }
 
+h4 {
+  width: 40%;
+  font-size: 25px;
+  color: black;
+  text-shadow: 1px 1px 1px #cea7db;
+  padding-top: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  bottom: 178px;
+  left: 188px;
+  position: relative;
+}
+
 @media only screen and (max-width: 700px) {
   #searchCity {
     width: 250px;

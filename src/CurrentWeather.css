@@ -32,26 +32,24 @@
   position: center;
 }
 
-.weatherElements {
+.weatherElements li {
   position: relative;
   bottom: 220px;
   left: 322px;
-  font-size: 41px;
-  display: inline;
-}
-
-.weatherElements li {
+  font-size: 18px;
   display: block;
 }
 
 .icon {
   position: relative;
   bottom: 40px;
-  right: 30px;
+  right: 50px;
 }
 
 #description {
   position: relative;
-  left: 170px;
+  left: 175px;
   bottom: 80px;
+  color: black;
+  text-shadow: 1px 1px 1px #cea7db;
 }

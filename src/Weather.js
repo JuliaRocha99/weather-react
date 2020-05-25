@@ -66,6 +66,9 @@ export default function Weather(props) {
           </button>
         </span>
         <CurrentWeather cityDefault={props.city} weatherData={weatherData} />
+        <div className="forecastTitle">
+          <h4>FORECAST</h4>
+        </div>
         <WeatherForecast city={weatherData.city} />
       </div>
     );
