@@ -1,3 +1,24 @@
+#temperature {
+  font-weight: 400;
+  color: rgb(33, 33, 33);
+  font-size: 50px;
+  position: relative;
+  left: 131px;
+  bottom: -50px;
+  line-height: 1;
+}
+
+.float-left {
+  position: relative;
+  bottom: 85px;
+  left: 28px;
+  object-position: center;
+}
+
 .unit {
   margin-left: 135px;
+}
+
+.icon {
+  display: inline-block;
 }

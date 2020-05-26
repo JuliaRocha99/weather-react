@@ -67,3 +67,7 @@ h4 {
     border-color: black;
   }
 }
+
+.icon {
+  display: inline-block;
+}

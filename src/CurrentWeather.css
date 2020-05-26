@@ -1,22 +1,6 @@
-.col-6 .active {
-  color: black;
-  cursor: default;
-  font-weight: bold;
-}
-
-.col-6 .active:hover {
-  text-decoration: none;
-}
-
-.float-left {
-  position: relative;
-  bottom: 85px;
-  left: 50px;
-}
-
-#weatherStats {
-  display: inline;
-  font-weight: bold;
+.row {
+  margin-top: 50px;
+  position: center;
 }
 
 #actualWeather {
@@ -26,30 +10,27 @@
   font-weight: bold;
 }
 
-.row {
-  margin-top: 50px;
-  position: center;
+#description {
+  position: absolute;
+  left: 175px;
+  bottom: 65px;
+  color: black;
+  text-shadow: 1px 1px 1px #cea7db;
+}
+
+.icon {
+  position: absolute;
+  object-position: center;
+  display: inline-block;
+  bottom: 80px;
+  right: 10px;
+  left: 75px;
 }
 
 .weatherElements li {
   position: relative;
-  bottom: 275px;
+  bottom: 150px;
   left: 338px;
   font-size: 18px;
   display: block;
-}
-
-.icon {
-  position: relative;
-  bottom: 90px;
-  right: 10px;
-  left: 60px;
-}
-
-#description {
-  position: relative;
-  left: 175px;
-  bottom: 132px;
-  color: black;
-  text-shadow: 1px 1px 1px #cea7db;
 }

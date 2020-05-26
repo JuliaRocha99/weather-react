@@ -37,58 +37,6 @@ h1 {
   text-align: center;
 }
 
-.inlining {
-  display: inline;
-}
-
-.first {
-  width: 50%;
-  color: black;
-  text-shadow: 1px 1px 1px #cea7db;
-  margin-left: 75px;
-}
-
-img {
-  width: 50px;
-}
-
-#icon {
-  position: relative;
-  left: 20px;
-  top: -36px;
-  width: 90px;
-}
-
-@media only screen and (max-width: 350px) {
-  .searchbox {
-    width: 20px;
-    height: 3px;
-  }
-}
-
-#temperature {
-  font-weight: 400;
-  color: rgb(33, 33, 33);
-  font-size: 50px;
-  position: relative;
-  left: 131px;
-  bottom: -50px;
-  line-height: 1;
-}
-
-@media only screen and (max-width: 700px) {
-  [class*="container"] {
-    padding: 10px;
-  }
-  [class*="first"] {
-    font-size: 24px;
-  }
-
-  [class*="weatherElements"] {
-    right: 94px;
-  }
-}
-
 .credit {
   position: relative;
   resize: horizontal;

@@ -31,11 +31,12 @@ export default function CurrentWeather(props) {
           <div className="float-left">
             <WeatherTemperature celsius={props.weatherData.temperature} />
           </div>
-          <div className="icon">
-            <WeatherIcon code={props.weatherData.icon} />
-          </div>
+
           <div id="description">
             <p>{props.weatherData.description}</p>
+          </div>
+          <div className="icon">
+            <WeatherIcon code={props.weatherData.icon} />
           </div>
           <span className="weatherElements">
             <ul>
