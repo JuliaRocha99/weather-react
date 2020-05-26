@@ -2,10 +2,8 @@
   text-align: center;
   margin: 10px 0;
   font-weight: bold;
-  display: inline-block;
 }
 
 .WeatherForecast canvas {
-  display: inline-block;
   margin: 5px auto;
 }

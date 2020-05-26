@@ -11,20 +11,19 @@
 }
 
 #description {
-  position: static;
   left: 175px;
   bottom: 60px;
   color: black;
   text-shadow: 1px 1px 1px #cea7db;
+  position: absolute;
 }
 
 .icon {
   position: absolute;
-  object-position: center;
   display: inline-block;
   bottom: 80px;
   right: 10px;
-  left: 75px;
+  left: 65px;
 }
 
 .weatherElements li {
