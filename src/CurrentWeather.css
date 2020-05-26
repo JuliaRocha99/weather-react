@@ -11,9 +11,9 @@
 }
 
 #description {
-  position: absolute;
+  position: static;
   left: 175px;
-  bottom: 65px;
+  bottom: 60px;
   color: black;
   text-shadow: 1px 1px 1px #cea7db;
 }
