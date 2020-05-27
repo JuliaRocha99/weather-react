@@ -45,7 +45,7 @@ export default function CurrentWeather(props) {
               </li>
               <li>
                 Wind: <span id="wind" /> {Math.round(props.weatherData.wind)}{" "}
-                k/h
+                km/h
               </li>
             </ul>
           </span>
