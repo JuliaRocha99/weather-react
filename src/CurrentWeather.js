@@ -28,6 +28,9 @@ export default function CurrentWeather(props) {
     return (
       <div id="weather" className="row">
         <div className="col-6" id="actualWeather">
+          <div className="icon">
+            <WeatherIcon code={props.weatherData.icon} />
+          </div>
           <div className="float-left">
             <WeatherTemperature celsius={props.weatherData.temperature} />
           </div>
@@ -35,9 +38,7 @@ export default function CurrentWeather(props) {
           <div id="description">
             <p>{props.weatherData.description}</p>
           </div>
-          <div className="icon">
-            <WeatherIcon code={props.weatherData.icon} />
-          </div>
+
           <span className="weatherElements">
             <ul>
               <li>
